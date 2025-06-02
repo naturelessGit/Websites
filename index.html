@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌐 Websites - The Website for Websites</title>
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #222;
+      --entry-bg: white;
+      --entry-hover: #e7f3ff;
+      --desc-color: #555;
+      --logo-bg: #ddd;
+      --logo-text: #777;
+    }
+    body.dark {
+      --bg-color: #1c1c1c;
+      --text-color: #f1f1f1;
+      --entry-bg: #2a2a2a;
+      --entry-hover: #333;
+      --desc-color: #ccc;
+      --logo-bg: #444;
+      --logo-text: #bbb;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    p.tagline {
+      text-align: center;
+      color: var(--desc-color);
+      margin-bottom: 2rem;
+    }
+    .search-container {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    input[type="search"] {
+      width: 80%;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 9999px;
+      border: 1px solid #ccc;
+      outline: none;
+      transition: border-color 0.3s;
+      background: var(--entry-bg);
+      color: var(--text-color);
+    }
+    input[type="search"]:focus {
+      border-color: #0078d7;
+    }
+    .theme-toggle {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .theme-toggle button {
+      background: var(--entry-bg);
+      color: var(--text-color);
+      border: 1px solid #ccc;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    ul#website-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li.website-entry {
+      background: var(--entry-bg);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    li.website-entry:hover {
+      background: var(--entry-hover);
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: var(--logo-bg);
+      border-radius: 8px;
+      margin-right: 1rem;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--logo-text);
+    }
+    .website-info {
+      flex-grow: 1;
+    }
+    .website-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin: 0;
+      margin-bottom: 0.25rem;
+    }
+    .website-desc {
+      margin: 0;
+      color: var(--desc-color);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 Websites - The Website for Websites</h1>
+
+  <div class="theme-toggle">
+    <button id="toggle-theme">🌙 Dark Mode</button>
+  </div>
+
+  <div class="search-container">
+    <input type="search" id="search" placeholder="Search for websites... 🔎" />
+  </div>
+
+  <p class="tagline">Scroll down in the endless list of websites below, sorted by the most recently added. Or use the search bar above</p>
+
+  <ul id="website-list">
+               <li class="website-entry" onclick="window.open('https://roadmap.sh', '_blank')">
+      <div class="logo">RM</div>
+      <div class="website-info">
+        <p class="website-name">Roadmap.sh</p>
+        <p class="website-desc">Developer roadmaps</p>
+      </div>
+      </li>
+             <li class="website-entry" onclick="window.open('https://dictionary.com', '_blank')">
+      <div class="logo">DICT</div>
+      <div class="website-info">
+        <p class="website-name">Dictionary.com</p>
+        <p class="website-desc">A long dictionary</p>
+      </div>
+      </li>
+           <li class="website-entry" onclick="window.open('https://icanhas.cheezburger.com/', '_blank')">
+      <div class="logo">ICHC</div>
+      <div class="website-info">
+        <p class="website-name">I Can Has Cheezburger</p>
+        <p class="website-desc">I Can Has Cheezburger? (abbreviated as ICHC) is a blog-format website which features videos and image macros. It was created in 2007 by Eric Nakagawa and Kari Unebasami.</p>
+      </div>
+      </li>
+           <li class="website-entry" onclick="window.open('https://sflixz.stream/home/', '_blank')">
+      <div class="logo">SF</div>
+      <div class="website-info">
+        <p class="website-name">Sflix</p>
+        <p class="website-desc">Unlimited Movies, One Click Away! (⚠️ Risky but safe)</p>
+      </div>
+      </li>
+         <li class="website-entry" onclick="window.open('https://y8.com/', '_blank')">
+      <div class="logo">Y8</div>
+      <div class="website-info">
+        <p class="website-name">Y8</p>
+        <p class="website-desc">Free online games</p>
+      </div>
+      </li>
+       <li class="website-entry" onclick="window.open('https://loecsen.com/en/', '_blank')">
+      <div class="logo">LS</div>
+      <div class="website-info">
+        <p class="website-name">Loecsen</p>
+        <p class="website-desc">Learn real-life languages with our simple and fast method</p>
+      </div>
+      </li>
+     <li class="website-entry" onclick="window.open('https://wolframalpha.com', '_blank')">
+      <div class="logo">WA</div>
+      <div class="website-info">
+        <p class="website-name">Wolfram Alpha</p>
+        <p class="website-desc">Compute expert-level answers using Wolfram’s breakthrough algorithms, knowledgebase and AI technology.</p>
+      </div>
+      </li>
+   <li class="website-entry" onclick="window.open('https://web.telegram.org/', '_blank')">
+      <div class="logo">TG</div>
+      <div class="website-info">
+        <p class="website-name">Telegram</p>
+        <p class="website-desc">Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.</p>
+      </div>
+      </li>
+  <li class="website-entry" onclick="window.open('http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/', '_blank')">
+      <div class="logo">AH</div>
+      <div class="website-info">
+        <p class="website-name">Ahmia</p>
+        <p class="website-desc">Ahmia searches hidden services on the Tor network.</p>
+      </div>
+      </li>
+  <li class="website-entry" onclick="window.open('https://archive.org', '_blank')">
+      <div class="logo">AR</div>
+      <div class="website-info">
+        <p class="website-name">Archive.org</p>
+        <p class="website-desc">Search the history of over 946 billion web pages on the Internet. </p>
+      </div>
+      </li>
+    <li class="website-entry" onclick="window.open('https://codepen.io/pen/', '_blank')">
+      <div class="logo">CDPN</div>
+      <div class="website-info">
+        <p class="website-name">Codepen</p>
+        <p class="website-desc">The best place to build, test, and discover front-end code.</p>
+      </div>
+      </li>
+   <li class="website-entry" onclick="window.open('https://theapplewiki.com/', '_blank')">
+      <div class="logo">AW</div>
+      <div class="website-info">
+        <p class="website-name">Apple Wiki</p>
+        <p class="website-desc">The Apple Wiki is a community effort to document Apple's amazing devices and software. </p>
+      </div>
+      </li>
+
+ <li class="website-entry" onclick="window.open('https://userscript.zone/', '_blank')">
+      <div class="logo">USZ</div>
+      <div class="website-info">
+        <p class="website-name">Userscript.Zone</p>
+        <p class="website-desc">A list of browser userscripts.</p>
+      </div>
+      </li>
+
+  <li class="website-entry" onclick="window.open('https://cobalt.tools/', '_blank')">
+      <div class="logo">CT</div>
+      <div class="website-info">
+        <p class="website-name">cobalt.tools</p>
+        <p class="website-desc">cobalt helps you save anything from your favorite websites: video, audio, photos or gifs. just paste the link and you’re ready to rock!</p>
+      </div>
+      </li>
+           <li class="website-entry" onclick="window.open('https://github.com/', '_blank')">
+      <div class="logo">GH</div>
+      <div class="website-info">
+        <p class="website-name">GitHub</p>
+        <p class="website-desc">Build and ship software on a single, collaborative platform</p>
+      </div>
+      </li>
+        <li class="website-entry" onclick="window.open('https://en.wikipedia.org', '_blank')">
+      <div class="logo">WIKI</div>
+      <div class="website-info">
+        <p class="website-name">Wikipedia</p>
+        <p class="website-desc">The free encyclopedia.</p>
+      </div>
+      </li>
+             <li class="website-entry" onclick="window.open('https://test.wikipedia.org', '_blank')">
+      <div class="logo">TW</div>
+      <div class="website-info">
+        <p class="website-name">Test Wikipedia</p>
+        <p class="website-desc">The experimental and unseen Wikipedia.</p>
+        </li>
+    <li class="website-entry" onclick="window.open('https://radio.garden', '_blank')">
+      <div class="logo">RG</div>
+      <div class="website-info">
+        <p class="website-name">Radio Garden</p>
+        <p class="website-desc">A globe of radio stations.</p>
+      </div>
+    </li>
+      </div>
+    </li>
+  </ul>
+
+  <footer style="text-align:center; margin: 3rem 0 1rem; color: #777; font-size: 0.9rem;">
+  <p>If you ever gatekept a website, it’s probably on here. If not? <a href="https://google.com" target="_blank" rel="noopener" style="color:#0078d7; text-decoration:none;">Submit them here.</a></p>
+  <p>
+  <a href="https://github.com/naturelessGit" target="_blank" rel="noopener noreferrer" style="color:#0078d7; text-decoration:none; margin: 0 1rem;">GitHub</a> |
+  <a href="mailto:ogeomappers@gmail.com" style="color:#0078d7; text-decoration:none; margin: 0 1rem;">Email</a> |
+  <a href="#" onclick="navigator.clipboard.writeText(window.location.href); alert('🔗 Link copied'); return false;" style="color:#0078d7; text-decoration:none; margin: 0 1rem;">Share This Website</a>
+</p>
+
+  </p>
+</footer>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const websiteList = document.getElementById('website-list');
+    const websiteEntries = Array.from(websiteList.children);
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+      websiteEntries.forEach(entry => {
+        const name = entry.querySelector('.website-name').textContent.toLowerCase();
+        const desc = entry.querySelector('.website-desc').textContent.toLowerCase();
+        if (name.includes(query) || desc.includes(query)) {
+          entry.style.display = '';
+        } else {
+          entry.style.display = 'none';
+        }
+      });
+    });
+
+    const toggleBtn = document.getElementById('toggle-theme');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      toggleBtn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
+</body>
+</html>
